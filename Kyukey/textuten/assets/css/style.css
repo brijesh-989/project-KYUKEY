@@ -1,0 +1,123 @@
+.pic {
+    position: absolute;
+    width: 109px;
+    top: 20%;
+    left: 80%;
+    height: 80px;
+    
+
+}
+.open{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    width: 300px;
+
+}
+.ham{
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    left: 90%;
+    top: 5%;
+}
+.key{
+    position: absolute;
+    width: 74px;
+    height: 88px;
+    top: 20%;
+    left: 10%;
+}
+.title
+{
+    position: absolute;
+    top: 20%;
+    letter-spacing: 0em;
+    left: 40%;
+    font-family: 'Courier New', Courier, monospace;
+    font-stretch: normal;
+    color:black;
+    font-size: x-large;
+    font-display: inherit;
+    
+}
+.header{
+    position: absolute;
+    left:45% ;
+    width: 300px;
+    font-size: xx-large;
+    font-weight: 200;
+    color: darkturquoise;
+    font-stretch: expanded;
+    font-family: cursive;
+    font-variant: small-caps;
+
+}
+.form_area{
+    position: absolute;
+    width: 50%;
+    border: white;
+    background-color:white ;
+    padding: 10px;
+    color:black;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: large;
+    top: 70%;
+    left: 5%;
+    text-align: center;
+}
+.lgbutton{
+    position: absolute;
+    border-radius: 40px;
+    top: 80%;
+    left: 46%;
+    width: auto;
+    height: 40px;
+    background: linear-gradient(90deg,#03a9f4,#f441a5,#03a9f4);
+    background-size: 200%;
+    font-size: large;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 1.5s;
+    overflow: hidden;
+}
+.lgbutton:hover{
+
+    animation: animate 8s linear infinite;
+    background-position: right;
+}
+@keyframes animate
+{
+    0%
+    {
+        background-position: 0%;
+    }
+    100%
+    {
+        background-position: 400%;
+    }
+}
+.lgbutton:before{
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5ox;
+    bottom: -5px;
+    z-index: -1;
+    background: linear-gradient(90deg,#03a9f4,#f441a5,#03a9f4);
+    opacity: 0;
+    background-size: 400%;
+    transition: 1.5s;
+}
+.lgbutton:after{
+    filter: blur(40px);
+    opacity: 1;
+    border: none;
+    margin: 0;
+}
+a:focus , a:active , a:hover{
+  outline: 0;
+}

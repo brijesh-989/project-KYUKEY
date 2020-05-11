@@ -1,0 +1,35 @@
+{% load static %}
+
+
+<!Doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>
+        </title>
+        <link rel="stylesheet" href="{% static 'css/style.css' %} "/>
+    </head>
+    <body>
+        <div class ='wrapper'>
+            <img class='pic' src="{% static 'home.png' %} "/>
+            <img class='open' src="{% static 'open.png' %} "/>
+            <img class='key' src="{% static 'key.png' %} "/>
+            <img class='ham' src="{% static 'ham.png' %} "/>
+        
+        </div>
+        <div class="title">
+            <h1>Lock Status </h1>
+        </div>
+        <div class="header">
+            <h2>KyuKey</h2>
+        </div>
+        <form action="kyukey" method="POST">
+            {% csrf_token %}
+            
+           <input  class="lgbutton" type="submit"value="Generate Kyukey">
+        </form>
+        <input class="form_area" type="otp" placeholder={{gen}} >
+            
+        </div>
+    </body>
+</html>
